@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>The Toasty Veterinary Quiz!</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Veterinary Science Blog and Games">
+		<meta name="keywords" content="Veterinary, Vet, Blog">
+		<meta name="author" content="Maia A">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+<body>
+<a href="..\index.html"><img src="images/coop.png" alt="Clickable Image" width=50></a>
+<div class="container">
+  <h1>The Toasty <span class="subject"></span> Quiz!</h1>
+  <h2>
+    How many <span class="detailed-subject"></span>
+    can you name in <span class="time-limit"></span>?
+  </h2>
+  <h2>To prepare, <span><a href="https://www.petmd.com/veterinaryterms" target="_blank">study the terms here</a>
+</span>.</h2>
+  <div class="side">
+    <div class="toast neutral-toast"></div>
+  </div>
+  <div class="main">
+    <button type="button" class="start">Ready? Click here to start!</button>
+    <div class="started">
+      <input type="text" class="input">
+      <div class="status">
+        <div class="status-timer">
+          Time remaining: <span class="time-remaining"></span>
+        </div>
+        <div class="status-current-score">
+          Current score: <span class="score"></span>
+          out of <span class="total"></span>
+        </div>
+        <div class="status-final-results">
+          <span class="end-greeting"></span>
+          You got <span class="score"></span>
+          out of <span class="total"></span>.
+          That's <span class="percent"></span>%!
+        </div>
+        <div class="status-toggle-answers">
+          (<a href="#" class="toggle">see what you missed</a>)
+        </div>
+      </div>
+      <ul class="answers scored-answers"></ul>
+      <ul class="answers missed-answers"></ul>
+      <div class="footnote">
+        Thanks for playing!
+        <a href="#" class="reset">Play again</a>?
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/main.js"></script>
+
+</body>
+</html>
