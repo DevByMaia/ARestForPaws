@@ -1,0 +1,5 @@
+max-width: 1680px
+max-width: 1280px 
+max-width: 980px 
+max-width: 736px copy to 980
+max-width: 480px
