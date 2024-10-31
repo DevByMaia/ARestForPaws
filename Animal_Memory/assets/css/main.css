@@ -1,0 +1,147 @@
+/* (c) 2017 Tina Anastopoulos - Memory Game Demo */
+
+@import url(http://fonts.googleapis.com/css?family=Molle:400italic);
+
+* {
+	margin: 0;
+}
+
+body {
+	background: #4997D0; 
+	background: -webkit-linear-gradient(#4997D0,#9BDDFF); 
+	background: linear-gradient(#4997D0,#9BDDFF);
+	}
+
+/* Header */
+
+header {
+	width: 100%;
+	height: 1.5em;
+	margin: 2.5em 0 2em;
+	position: relative;
+	background: rgba(255,255,255,.5);
+}
+
+#sun {
+	width: 5em;
+	position: absolute;
+	top: -6.25em;
+	left: 3.125em;
+	fill: #ffa500;
+	filter: drop-shadow( .3em .3em .3em #888 );
+	-webkit-filter: drop-shadow( .3em .3em .3em #888 );
+}
+
+#sun:hover, #sun:active {
+	fill: #FFCC00;
+	-webkit-filter: drop-shadow( .2em .2em .2em #ffa500);
+	filter: drop-shadow( .2em .2em .2em #ffa500);
+	-webkit-transform: translate(0,.5em);
+	transform: translate(0,.5em);
+}
+	
+/* Game */
+
+h1 {
+	color:#efefef;
+  	font-family: 'Molle';
+  	font-weight: 400;
+  	font-style: italic;
+  	font-size: 5em;
+  	margin-top: 1em;
+  	text-align:center;
+	text-shadow: .1em .1em .4em rgba(255,255,255,.65);
+}	
+
+#picbox {
+	margin: 0 auto;
+	width: 40em;
+	height: 40em;
+}
+
+#boxcard {
+	z-index: 1;
+	margin-top: .625em;
+}
+
+#boxcard div{
+	float: left;
+	width: 6.25em;
+	height: 6.25em;
+	margin: .313em;
+	padding: .313em;
+	border: .25em solid #888;
+	cursor: pointer;
+	border-radius: .625em;
+	box-shadow: 0 .06em .3em rgba(0,0,0,.8);
+  	background: #fff;
+	z-index: 2;
+}
+
+#boxcard div img {
+	display: none;
+	border-radius: .625em;
+	z-index: 3;
+}
+
+#boxbuttons {
+	text-align: center;
+	margin: 1.25em;
+	display: block;
+}
+
+#boxbuttons .button {
+	text-transform: uppercase;
+	background: #888;
+	color: #fff;
+	padding: .313em .625em;
+	margin: .313em;
+	border-radius: .625em;
+	cursor: pointer;
+}
+
+#boxbuttons .button:hover {
+	background: #999;
+}
+
+footer {
+	text-align: center;
+	color: #2f4f4f;
+	font-style: italic;
+	background: rgba(255,255,255,1);
+	padding: .2em 0;
+	margin-top: 2em;
+}
+
+@media screen and (max-width: 736px) {
+	h1 {
+		font-size: 4em;
+	}
+
+	#picbox {
+		width: 31.5em;
+		height: 31.5em;
+	}
+	
+	#boxcard div, #boxcard div img{
+		width: 4.5em;
+		height: 4.5em;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	h1 {
+		font-size: 2.5em;
+	}
+
+	#picbox {
+		width: 20em;
+		height: 31em;
+	}
+
+	#boxcard div, #boxcard div img{
+		width: 2.2em;
+		height: 2.2em;
+	}
+
+}
